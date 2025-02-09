@@ -26,4 +26,45 @@ public class ClinicalData {
 
     @Column(nullable = false, columnDefinition = "TEXT")
     private String notes;
+    private Long patientId;
+
+    public void setPatientId(long l) {
+    }
+
+    // Geter dhe Seter për id
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    // Geter dhe Seter për patientId
+    public Long getPatientId() {
+        return patientId;
+    }
+
+    public void setPatientId(Long patientId) {
+        this.patientId = patientId;
+    }
+
+    // Geter dhe Seter për entryTime
+    public LocalDateTime getEntryTime() {
+        return entryTime;
+    }
+
+    public void setEntryTime(LocalDateTime entryTime) {
+        this.entryTime = entryTime;
+    }
+
+    // Geter dhe Seter për notes
+    public String getNotes() {
+        return notes;
+    }
+
+    public void setNotes(String notes) {
+        this.notes = notes;
+    }
+
 }
