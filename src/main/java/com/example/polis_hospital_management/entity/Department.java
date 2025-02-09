@@ -25,5 +25,20 @@ public class Department {
     @OneToMany(mappedBy = "department", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Patient> patients;
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+    // Setter për 'name'
+    public void setName(String name) {
+        this.name = name;
+    }
+    // Getter për 'id'
+    public Long getId() {
+        return id;
+    }
+    // Getter për 'name'
+    public String getName() {
+        return name;
+    }
 }
 

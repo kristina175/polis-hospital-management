@@ -39,4 +39,11 @@ public class PatientController {
     public void deletePatient(@PathVariable Long id) {
         patientService.deletePatient(id);
     }
+
+    @Override
+    public String toString() {
+        return "PatientController{" +
+                "patientService=" + patientService +
+                '}';
+    }
 }
