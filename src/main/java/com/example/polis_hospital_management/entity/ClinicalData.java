@@ -18,14 +18,12 @@ public class ClinicalData {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "patient_id", nullable = false)
+    @JoinColumn(name = "patientId", nullable = false)
     private Patient patient;
 
     @Column(nullable = false)
     private LocalDateTime entryTime;
-
-    @Column(nullable = false, columnDefinition = "TEXT")
-    private String notes;
+    @Column(insertable = false, updatable = false)
     private Long patientId;
 
     public void setPatientId(long l) {
@@ -58,13 +56,13 @@ public class ClinicalData {
         this.entryTime = entryTime;
     }
 
-    // Geter dhe Seter për notes
-    public String getNotes() {
-        return notes;
-    }
-
-    public void setNotes(String notes) {
-        this.notes = notes;
-    }
+//    // Geter dhe Seter për notes
+//    public String getNotes() {
+//        return notes;
+//    }
+//
+//    public void setNotes(String notes) {
+//        this.notes = notes;
+//    }
 
 }
