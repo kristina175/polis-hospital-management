@@ -56,6 +56,10 @@ public class ClinicalData {
         this.entryTime = entryTime;
     }
 
+    public void setNotes(String someClinicalNotes) {
+
+    }
+
 //    // Geter dhe Seter për notes
 //    public String getNotes() {
 //        return notes;
