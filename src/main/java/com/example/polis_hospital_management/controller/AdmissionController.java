@@ -15,5 +15,12 @@ public class AdmissionController {
     public Admission admitPatient(@PathVariable Long patientId, @RequestBody String reason) {
         return admissionService.admitPatient(patientId, reason);
     }
+
+    @Override
+    public String toString() {
+        return "AdmissionController{" +
+                "admissionService=" + admissionService +
+                '}';
+    }
 }
 

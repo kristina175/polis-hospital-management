@@ -34,4 +34,11 @@ public class DischargeController {
     public void deleteDischarge(@PathVariable Long id) {
         dischargeService.deleteDischarge(id);
     }
+
+    @Override
+    public String toString() {
+        return "DischargeController{" +
+                "dischargeService=" + dischargeService +
+                '}';
+    }
 }

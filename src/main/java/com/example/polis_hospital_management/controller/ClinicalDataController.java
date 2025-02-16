@@ -39,4 +39,11 @@ public class ClinicalDataController {
     public void deleteClinicalData(@PathVariable Long id) {
         clinicalDataService.deleteClinicalData(id);
     }
+
+    @Override
+    public String toString() {
+        return "ClinicalDataController{" +
+                "clinicalDataService=" + clinicalDataService +
+                '}';
+    }
 }

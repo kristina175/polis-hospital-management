@@ -34,4 +34,11 @@ public class DepartmentController {
     public void deleteDepartment(@PathVariable Long id) {
         departmentService.deleteDepartment(id);
     }
+
+    @Override
+    public String toString() {
+        return "DepartmentController{" +
+                "departmentService=" + departmentService +
+                '}';
+    }
 }

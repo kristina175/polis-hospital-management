@@ -6,5 +6,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 public interface AdmissionRepository extends JpaRepository<Admission, Long> {
-    List<Admission> findByPatient_Id(Long patientId); // Kjo duhet të jetë metoda e saktë
+    List<Admission> findByPatient_Id(Long patientId);
 }

@@ -14,14 +14,14 @@ public class ClinicalDataDTO {
     private LocalDateTime entryTime;
     private String notes; // Përshkrimi klinik
 
-    @Override
-    public String toString() {
-        return "ClinicalDataDTO{" +
-                "id=" + id +
-                ", patientId=" + patientId +
-                ", entryTime=" + entryTime +
-                ", notes='" + notes + '\'' +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "ClinicalDataDTO{" +
+//                "id=" + id +
+//                ", patientId=" + patientId +
+//                ", entryTime=" + entryTime +
+//                ", notes='" + notes + '\'' +
+//                '}';
+//    }
 }
 

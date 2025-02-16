@@ -38,11 +38,11 @@ public class PatientControllerTest {
         assertEquals("Doe", result.get(0).getSurname());
     }
 
-    @Override
-    public String toString() {
-        return "PatientControllerTest{" +
-                "patientService=" + patientService +
-                ", patientController=" + patientController +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "PatientControllerTest{" +
+//                "patientService=" + patientService +
+//                ", patientController=" + patientController +
+//                '}';
+//    }
 }
